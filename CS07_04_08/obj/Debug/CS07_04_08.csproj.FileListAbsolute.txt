@@ -18,3 +18,13 @@ G:\source\CS07_04_08\obj\Debug\CS07_04_08.csproj.GenerateResource.cache
 G:\source\CS07_04_08\obj\Debug\CS07_04_08.csproj.CoreCompileInputs.cache
 G:\source\CS07_04_08\obj\Debug\CS07_04_08.exe
 G:\source\CS07_04_08\obj\Debug\CS07_04_08.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS07_04_08\bin\Debug\CS07_04_08.exe.config
+C:\Users\180453\Source\Repos\CSharpClass\CS07_04_08\bin\Debug\CS07_04_08.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS07_04_08\bin\Debug\CS07_04_08.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS07_04_08\obj\Debug\CS07_04_08.csprojAssemblyReference.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS07_04_08\obj\Debug\CS07_04_08.Form1.resources
+C:\Users\180453\Source\Repos\CSharpClass\CS07_04_08\obj\Debug\CS07_04_08.Properties.Resources.resources
+C:\Users\180453\Source\Repos\CSharpClass\CS07_04_08\obj\Debug\CS07_04_08.csproj.GenerateResource.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS07_04_08\obj\Debug\CS07_04_08.csproj.CoreCompileInputs.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS07_04_08\obj\Debug\CS07_04_08.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS07_04_08\obj\Debug\CS07_04_08.pdb

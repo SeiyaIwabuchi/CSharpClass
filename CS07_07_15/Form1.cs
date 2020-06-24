@@ -16,28 +16,35 @@ namespace CS07_07_15
         public Form1()
         {
             InitializeComponent();
-            foreach(Record r in dummy)
-            {
-                listBox1.Items.Add(r.name) ;
-            }
+            for (int i = 0;i<dummy.Length;i++) dataGridView1.Rows.Add(i.ToString(),dummy[i].name, "", "");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
             {
-                new Form2(dummy[listBox1.SelectedIndex]).ShowDialog();
+                Console.WriteLine( dataGridView1.SelectedRows.GetType());
+                foreach(DataGridViewRow sr in dataGridView1.SelectedRows)
+                {
+                    new Form2(dummy[int.Parse((string)sr.Cells[0].Value)]).ShowDialog();
+                }
             }
             else
             {
                 try
                 {
-                    new Form3(dummy[listBox1.SelectedIndex]).ShowDialog();
+                    //new Form3(dummy[listBox1.SelectedIndex]).ShowDialog();
                 }catch(IndexOutOfRangeException)
                 {
                     MessageBox.Show("リストボックスから名前を選択してください。","エラー",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
             }
+            dateReload();
+        }
+        void dateReload()
+        {
+            dataGridView1.Rows.Clear();
+            for (int i = 0; i < dummy.Length; i++) dataGridView1.Rows.Add(i.ToString(), dummy[i].name, dummy[i].attend!=-1?dummy[i].attend.ToString():"", dummy[i].grade != -1 ? dummy[i].grade.ToString() : "");
         }
     }
 }
