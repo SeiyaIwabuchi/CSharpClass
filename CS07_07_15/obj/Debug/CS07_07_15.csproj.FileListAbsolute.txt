@@ -25,7 +25,6 @@ G:\source\CS07_07_15\obj\Debug\CS07_07_15.pdb
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\bin\Debug\CS07_07_15.exe.config
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\bin\Debug\CS07_07_15.exe
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\bin\Debug\CS07_07_15.pdb
-C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.csprojAssemblyReference.cache
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.Form1.resources
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.Form2.resources
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.Form3.resources

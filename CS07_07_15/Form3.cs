@@ -25,37 +25,16 @@ namespace CS07_07_15
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            if(comboBox1.SelectedIndex != -1)
             {
-                if (textBox1.Text == "1" || textBox1.Text == "2" || textBox1.Text == "3" || textBox1.Text == "4" || textBox1.Text == "5")
-                {
-                    rec.grade = int.Parse(textBox1.Text);
-                    this.Close();
-                }
-                else
-                {
-                    label1.Text = "成績が間違っています。";
-                }
+                rec.grade = comboBox1.SelectedIndex + 1;
+                this.Close();
             }
-            catch (FormatException)
+            else
             {
-                label1.Text = "成績が間違っています。";
+                label1.Text = "1～5を選択してください。";
             }
-        }
-
-        private void textBox1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                if (((TextBox)sender).Text == "1" || ((TextBox)sender).Text == "2" || ((TextBox)sender).Text == "3" || ((TextBox)sender).Text == "4" || ((TextBox)sender).Text == "5")
-                {
-                    label1.Text = ((TextBox)sender).Text + "ですね。";
-                }
-                else
-                {
-                    label1.Text = "成績が間違っています。";
-                }
-            }
+            
         }
     }
 }

@@ -16,32 +16,32 @@ namespace CS07_07_15
         public Form1()
         {
             InitializeComponent();
-            for (int i = 0;i<dummy.Length;i++) dataGridView1.Rows.Add(i.ToString(),dummy[i].name, "", "");
+            for (int i = 0; i < dummy.Length; i++) dataGridView1.Rows.Add(
+                i.ToString(), dummy[i].name, 
+                dummy[i].attend != -1 ? dummy[i].attend.ToString() : "", 
+                dummy[i].grade != -1 ? dummy[i].grade.ToString() : ""
+                );
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Record trec = dummy[0];
+            foreach (DataGridViewRow sr in dataGridView1.SelectedRows)
+            {
+                trec = dummy[int.Parse((string)sr.Cells[0].Value)];
+            }
             if (radioButton1.Checked)
             {
-                Console.WriteLine( dataGridView1.SelectedRows.GetType());
-                foreach(DataGridViewRow sr in dataGridView1.SelectedRows)
-                {
-                    new Form2(dummy[int.Parse((string)sr.Cells[0].Value)]).ShowDialog();
-                }
+                new Form2(trec).ShowDialog();
             }
             else
             {
-                try
-                {
-                    //new Form3(dummy[listBox1.SelectedIndex]).ShowDialog();
-                }catch(IndexOutOfRangeException)
-                {
-                    MessageBox.Show("リストボックスから名前を選択してください。","エラー",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-                }
+                new Form3(trec).ShowDialog();
             }
-            dateReload();
+            dataReload();
         }
-        void dateReload()
+        //DataGridViewの表示更新
+        void dataReload()
         {
             dataGridView1.Rows.Clear();
             for (int i = 0; i < dummy.Length; i++) dataGridView1.Rows.Add(i.ToString(), dummy[i].name, dummy[i].attend!=-1?dummy[i].attend.ToString():"", dummy[i].grade != -1 ? dummy[i].grade.ToString() : "");
