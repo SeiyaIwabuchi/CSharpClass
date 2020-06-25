@@ -33,3 +33,4 @@ C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.csproj.
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.csproj.CoreCompileInputs.cache
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.exe
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.csprojAssemblyReference.cache
