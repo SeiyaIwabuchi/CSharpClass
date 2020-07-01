@@ -125,10 +125,10 @@
             // 
             // attend
             // 
-            this.attend.HeaderText = "出席率";
+            this.attend.HeaderText = "出席率(%)";
             this.attend.Name = "attend";
             this.attend.ReadOnly = true;
-            this.attend.Width = 70;
+            this.attend.Width = 80;
             // 
             // grade
             // 
