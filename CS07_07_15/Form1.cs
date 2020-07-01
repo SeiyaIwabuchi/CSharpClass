@@ -12,7 +12,11 @@ namespace CS07_07_15
 {
     public partial class Form1 : Form
     {
-        private Record[] dummy = { new Record("岩渕誠也",-1,-1), new Record("岩渕道明", -1, -1), new Record("岩渕レイ子", -1, -1) };
+        private Record[] dummy = { 
+            new Record("岩渕誠也",-1,-1), 
+            new Record("岩渕道明", -1, -1), 
+            new Record("岩渕レイ子", -1, -1) 
+        };
         public Form1()
         {
             InitializeComponent();
@@ -43,8 +47,17 @@ namespace CS07_07_15
         //DataGridViewの表示更新
         void dataReload()
         {
+            int secIdx = dataGridView1.SelectedRows[0].Index;
+            Console.WriteLine(secIdx);
             dataGridView1.Rows.Clear();
-            for (int i = 0; i < dummy.Length; i++) dataGridView1.Rows.Add(i.ToString(), dummy[i].name, dummy[i].attend!=-1?dummy[i].attend.ToString():"", dummy[i].grade != -1 ? dummy[i].grade.ToString() : "");
+            for (int i = 0; i < dummy.Length; i++) 
+                dataGridView1.Rows.Add(
+                    i.ToString(), 
+                    dummy[i].name, 
+                    dummy[i].attend!=-1?dummy[i].attend.ToString():"", 
+                    dummy[i].grade != -1 ? dummy[i].grade.ToString() : ""
+                    );
+            dataGridView1.Rows[secIdx].Selected = true;
         }
     }
 }
