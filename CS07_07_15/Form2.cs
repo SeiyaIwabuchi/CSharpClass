@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
 
 namespace CS07_07_15
 {
@@ -27,7 +28,7 @@ namespace CS07_07_15
         {
             try
             {
-                double attend = double.Parse(textBox1.Text);
+                double attend = double.Parse(Microsoft.VisualBasic.Strings.StrConv(textBox1.Text,VbStrConv.Narrow).Replace("%",""));
                 if (0 <= attend && attend <= 100)
                 {
                     if (attend * 10 % 1 == 0)
@@ -60,11 +61,15 @@ namespace CS07_07_15
             {
                 try
                 {
-                    double attend = double.Parse(((TextBox)sender).Text);
-                    if(0 <= attend && attend <= 100)
+                    double attend = double.Parse(
+                        Microsoft.VisualBasic.Strings.StrConv(
+                            textBox1.Text, 
+                            VbStrConv.Narrow).Replace("%", "")
+                            );
+                    if (0 <= attend && attend <= 100)
                     {
                         if (attend * 10 % 1 == 0) {
-                            label1.Text = Math.Round(attend, 1).ToString() + "%ですね。";
+                            label1.Text = String.Format("{0:f1}%ですね。",attend);
                             label1.ForeColor = Color.Black;
                         }
                         else
