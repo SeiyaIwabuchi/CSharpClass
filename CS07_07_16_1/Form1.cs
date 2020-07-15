@@ -19,8 +19,8 @@ namespace CS07_07_16_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bool[] temps = {radioButton1.Checked, radioButton2.Checked, radioButton3.Checked };
-            MessageBox.Show( Form2.ShowConfirmationForm(temps,richTextBox1.Text));
+            //bool[] temps = {radioButton1.Checked, radioButton2.Checked, radioButton3.Checked };
+            MessageBox.Show( Form2.ShowConfirmationForm(radioButton1.Checked, radioButton2.Checked, radioButton3.Checked, richTextBox1.Text));
         }
     }
 }
