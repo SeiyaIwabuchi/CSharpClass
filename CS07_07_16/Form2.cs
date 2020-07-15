@@ -22,12 +22,12 @@ namespace CS07_07_16
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            this.textBox1.Text = argumentValues[0];
+            this.textBox2.Text = argumentValues[0];
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.ReturnValue = textBox2.Text;
+            this.ReturnValue = textBox1.Text;
             this.Close();
         }
         static public string ShowMiniForm(string s)
