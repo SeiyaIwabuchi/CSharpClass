@@ -51,24 +51,25 @@ namespace CS08_01_01
             //ラジアン単位に変換
             for (; ; )
             {
-                for (int i = 0; i < 360; i++)
+                for (int i = 0; i < 360;i++ )
                 {
                     await Task.Delay(1);
-                    double d = i / (180 / Math.PI);
                     //中心位置を求める
                     float centX = img.Width / 2;
                     float centY = img.Height / 2;
                     //斜辺長を求める
                     float r = (float)Math.Sqrt( (Math.Pow(centX,2)) + (Math.Pow(centY,2)) );
+                    //float X = (r * (float)Math.Cos(d));
+                    //float Y = (r* (float)Math.Sin(d));
                     //画像右上の座標
-                    float rightTopX = centX - (r * (float)Math.Cos(d)) ;
-                    float rightTopY = centY + (r * (float)Math.Sin(d));
+                    float rightTopX = (r * (float)Math.Cos(getRadFromDeg(i -26.56505F))) + centX;
+                    float rightTopY = (r * (float)Math.Sin(getRadFromDeg(i - 26.56505F))) + centX;
                     //画像左上の座標
-                    float leftTopX = centX - (r * (float)Math.Cos(d));
-                    float leftTopY = centY - (r * (float)Math.Sin(d));
+                    float leftBottomX = (r * (float)Math.Cos(getRadFromDeg(i + 180 - 26.56505F))) + centX;
+                    float leftBottomY = (r * (float)Math.Sin(getRadFromDeg(i + 180 - 26.56505F))) + centX;
                     //画像左下の座標
-                    float leftBottomX = centX - (r * (float)Math.Cos(d));
-                    float leftBottomY = centY + (r * (float)Math.Sin(d));
+                    float leftTopX = (r * (float)Math.Cos(getRadFromDeg(i + 26.56505F + 180))) + centX;
+                    float leftTopY = (r * (float)Math.Sin(getRadFromDeg(i + 26.56505F + 180))) + centX;
                     //PointF配列を作成
                     PointF[] destinationPoints = {
                     new PointF(leftTopX, leftTopY),
@@ -79,13 +80,17 @@ namespace CS08_01_01
                         Console.WriteLine(p);
                     }
                     Console.WriteLine();
-                    //g.Clear(this.BackColor);
+                    g.Clear(this.BackColor);
                     g.DrawImage(img, destinationPoints);
                     pictureBox1.Image = canvas ;
                     //pictureBox1.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
                     //setPositon();
                 }
             }
+        }
+        private float getRadFromDeg(float deg)
+        {
+            return (float)(deg / (180 / Math.PI));
         }
     }
 }

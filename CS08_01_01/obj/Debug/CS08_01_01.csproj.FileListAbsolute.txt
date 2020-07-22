@@ -5,6 +5,5 @@ C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS08_01_01\obj\Debug\CS08_
 C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.Form1.resources
 C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.Properties.Resources.resources
 C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.csproj.GenerateResource.cache
-C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.csproj.CoreCompileInputs.cache
 C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.exe
 C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.pdb
