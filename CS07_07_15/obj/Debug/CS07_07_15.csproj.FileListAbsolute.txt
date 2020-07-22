@@ -34,3 +34,15 @@ C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.csproj.
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.exe
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.pdb
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.csprojAssemblyReference.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\bin\Debug\CS07_07_15.exe.config
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\bin\Debug\CS07_07_15.exe
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\bin\Debug\CS07_07_15.pdb
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.csprojAssemblyReference.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.Form1.resources
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.Form2.resources
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.Form3.resources
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.Properties.Resources.resources
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.csproj.GenerateResource.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.csproj.CoreCompileInputs.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.exe
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS07_07_15\obj\Debug\CS07_07_15.pdb
