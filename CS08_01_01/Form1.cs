@@ -13,9 +13,10 @@ namespace CS08_01_01
 {
     public partial class Form1 : Form
     {
-        Graphics g;
-        Bitmap img;
-        Bitmap canvas;
+        private Graphics g;
+        private Bitmap img;
+        private Bitmap canvas;
+        private bool tg = true;
         public Form1()
         {
             InitializeComponent();
@@ -29,12 +30,15 @@ namespace CS08_01_01
             //g.DrawImage(img,new PointF((canvas.Width/2) - (img.Width / 2), (canvas.Height / 2) - (img.Height / 2)));
             //pictureBox1.Image = canvas;
             //setPositon();
+            ((Button)button1).Text = tg ? "止める！" : "回す！";
             rotation();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             pictureBox1.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            tg = !tg;
+            ((Button)sender).Text = tg ? "止める！" : "回す！";
             //setPositon();
         }
 
@@ -51,7 +55,7 @@ namespace CS08_01_01
             //ラジアン単位に変換
             for (; ; )
             {
-                for (int i = 0; i < 360;i++ )
+                for (int i = 0; i < 360;)
                 {
                     await Task.Delay(1);
                     //中心位置を求める
@@ -80,9 +84,14 @@ namespace CS08_01_01
                         Console.WriteLine(p);
                     }
                     Console.WriteLine();
-                    g.Clear(this.BackColor);
-                    g.DrawImage(img, destinationPoints);
-                    pictureBox1.Image = canvas ;
+                    if (tg)
+                    {
+                        g.Clear(this.BackColor);
+                        g.DrawImage(img, destinationPoints);
+                        pictureBox1.Image = canvas;
+                        toolStripStatusLabel1.Text = i.ToString() + "°";
+                        i++;
+                    }
                     //pictureBox1.Image.RotateFlip(RotateFlipType.Rotate90FlipNone);
                     //setPositon();
                 }
