@@ -1,0 +1,4 @@
+C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_02\obj\Debug\CS08_02_03_02.csprojAssemblyReference.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_02\obj\Debug\CS08_02_03_02.Properties.Resources.resources
+C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_02\obj\Debug\CS08_02_03_02.csproj.GenerateResource.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_02\obj\Debug\CS08_02_03_02.csproj.CoreCompileInputs.cache
