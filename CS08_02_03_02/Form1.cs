@@ -21,19 +21,7 @@ namespace CS08_02_03_02
         }
         private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (count % 2 == 0)
-            {
-                Triangle tr = new Triangle(); Point p = new Point(); p.X = e.X; p.Y = e.Y; tr.setP(p);
-
-                ls.Add(tr); this.Invalidate();
-            }
-            else
-            {
-                Rectangle rct = new Rectangle(); Point p = new Point(); p.X = e.X; p.Y = e.Y; rct.setP(p);
-
-                ls.Add(rct); this.Invalidate();
-            }
-            count++;
+            draw(e);
         }
 
         private void Form1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -61,6 +49,23 @@ namespace CS08_02_03_02
                     g.FillPolygon(db, t.getP());
                 } 
             }
+        }
+
+        private void draw(MouseEventArgs e)
+        {
+            if (count % 2 == 0)
+            {
+                Triangle tr = new Triangle(); Point p = new Point(); p.X = e.X; p.Y = e.Y; tr.setP(p);
+
+                ls.Add(tr); this.Invalidate();
+            }
+            else
+            {
+                Rectangle rct = new Rectangle(); Point p = new Point(); p.X = e.X; p.Y = e.Y; rct.setP(p);
+
+                ls.Add(rct); this.Invalidate();
+            }
+            count++;
         }
     }
 }

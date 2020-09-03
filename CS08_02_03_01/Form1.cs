@@ -13,46 +13,56 @@ namespace CS08_02_03_01
     public partial class Form1 : Form
     {
         private Bitmap bm1, bm2;
-        //ColorMatrixオブジェクトの作成
-        //グレースケールに変換するための行列を指定する
-        private System.Drawing.Imaging.ColorMatrix cm;
-
         private int i=0;
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        public void convert()
         {
-            Bitmap newImg = new Bitmap(bm1.Width, bm1.Height);
-            Graphics g = Graphics.FromImage(newImg);
-            float[][] cma = new float[][]{
-                    new float[]{0.299f, 0.299f, 0.299f, 0 ,0},
-                new float[]{0.587f, 0.587f, 0.587f, 0, 0},
-                new float[]{0.114f, 0.114f, 0.114f, 0, 0},
-                new float[]{0, 0, 0, 1, 0},
-                new float[]{0, 0, 0, 0, 1}
-                };
-            foreach (float[] t in cma){
-                Console.Write("[");
-                foreach (float v in t) Console.Write(v + ",");
-                Console.WriteLine("]");
+            for(int x=0;x < bm1.Width; x++)
+            {
+                for (int y = 0; y < bm1.Height; y++)
+                {
+                    Color c = bm1.GetPixel(x, y);
+                    int rgb = c.ToArgb();
+                    int a = (rgb >> 24) & 0xFF;
+                    int r = (rgb >> 16) & 0xff;
+                    int g = (rgb >> 8) & 0xff;
+                    int b = (rgb >> 0) & 0xff;
+                    switch (i)
+                    {
+                        case 1:
+                            r >>= 2; break;
+                        case 2:
+                            g >>= 2; break;
+                        case 3:
+                            b >>= 2; break;
+                    }
+                    rgb = (a << 24) | (r << 16) | (g << 8) | (b << 0);
+                    c = Color.FromArgb(rgb);
+                    bm2.SetPixel(x, y, c);
+                } 
             }
-            Console.WriteLine();
-            cm = new System.Drawing.Imaging.ColorMatrix(cma);
-            i = ++i % 6;
-            //ImageAttributesオブジェクトの作成
-            System.Drawing.Imaging.ImageAttributes ia = new System.Drawing.Imaging.ImageAttributes();
-            g.DrawImage(bm1, new Rectangle(0, 0, bm1.Width, bm1.Height), 0, 0, bm1.Width, bm1.Height, GraphicsUnit.Pixel, ia);
-            ia.SetColorMatrix(cm);
-            pictureBox1.Image = newImg;
-            //g.Dispose();
+        }
+
+        private void Form1_Click(object sender, EventArgs e)
+        {
+            i++;
+            if (i >= 4) i = 0;
+            convert();
+            this.Invalidate();
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            g.DrawImage(bm2, 0, 0, 400, 300);
         }
 
         public Form1()
         {
             InitializeComponent();
-            bm1 = new Bitmap("../../tea.jpg");
-            bm2 = new Bitmap("../../tea.jpg");
-            pictureBox1.Image = bm1;
-            //bm1のGraphicsオブジェクトを取得
+            bm1 = new Bitmap("..\\..\\tea.jpg");
+            bm2 = new Bitmap("..\\..\\tea.jpg");
+            i = 0;
         }
 
     }

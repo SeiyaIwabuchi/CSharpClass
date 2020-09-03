@@ -1,4 +1,4 @@
-﻿namespace CS08_02_03_01
+﻿namespace CS08_03_06
 {
     partial class Form1
     {
@@ -37,7 +37,6 @@
             this.ClientSize = new System.Drawing.Size(384, 261);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Click += new System.EventHandler(this.Form1_Click);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             this.ResumeLayout(false);
 
