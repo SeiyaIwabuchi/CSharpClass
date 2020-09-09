@@ -13,27 +13,35 @@ namespace CS08_03_06
     public partial class Form1 : Form
     {
 
-        private List<Ball> ls;
+        private List<Tri> ls;
         public Form1()
         {
             InitializeComponent();
-            ls = new List<Ball>();
+            ls = new List<Tri>();
 
             Random rn = new Random();
 
-            for(int i = 0;i < 30; i++)
+            for(int i = 0;i < 100; i++)
             {
-                Ball bl = new Ball();
+                //Ball bl = new Ball();
+                Tri tr = new Tri();
                 int[] xy = {rn.Next(this.Width),rn.Next(this.Height)};
-                int[] rgb = {rn.Next(256), rn.Next(256), rn.Next(256)};
+                int[] rgb = {rn.Next(256), rn.Next(256), rn.Next(256), rn.Next(256) };
 
-                Point p = new Point(xy[0],xy[1]);
-                Color c = Color.FromArgb(rgb[0], rgb[1], rgb[2]);
+                //Point p = new Point(xy[0],xy[1]);
+                Point a = new Point(xy[0],xy[1]);
+                Point b = new Point(xy[0], xy[1]+10);
+                Point c = new Point(xy[0]+5, xy[1]+5);
+                Color col = Color.FromArgb(rgb[0], rgb[1], rgb[2],rgb[3]);
+                tr.a = a;
+                tr.b = b;
+                tr.c = c;
+                tr.color = col;
+                Console.WriteLine(col);
+                //bl.point = p;
+                //bl.color = c;
 
-                bl.point = p;
-                bl.color = c;
-
-                ls.Add(bl);
+                ls.Add(tr);
             }
         }
 
@@ -41,13 +49,15 @@ namespace CS08_03_06
         {
             Graphics g = e.Graphics;
 
-            foreach(Ball bl in ls)
+            foreach(Tri t in ls)
             {
-                Point p = bl.point;
-                Color c = bl.color;
-                SolidBrush br = new SolidBrush(c);
-
-                g.FillEllipse(br, p.X, p.Y, 10, 10);
+                SolidBrush br = new SolidBrush(t.color);
+                Point[] p = new Point[3];
+                int i = 0;
+                p[i++] = t.a;
+                p[i++] = t.b;
+                p[i++] = t.c;
+                g.FillPolygon(br, p);
             }
         }
     }
@@ -55,5 +65,10 @@ namespace CS08_03_06
     {
         public Color color;
         public Point point;
+    }
+    class Tri
+    {
+        public Color color;
+        public Point a, b, c;
     }
 }
