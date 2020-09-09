@@ -11,12 +11,13 @@ namespace CS09_01_01
         /// <summary>
         /// アプリケーションのメイン エントリ ポイントです。
         /// </summary>
+        public static bool cont = true;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            while(cont) Application.Run(new Form1());
         }
     }
 }
