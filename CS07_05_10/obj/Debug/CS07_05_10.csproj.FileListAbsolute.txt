@@ -26,3 +26,4 @@ C:\Users\180453\Source\Repos\CSharpClass\CS07_05_10\obj\Debug\CS07_05_10.csproj.
 C:\Users\180453\Source\Repos\CSharpClass\CS07_05_10\obj\Debug\CS07_05_10.csproj.CoreCompileInputs.cache
 C:\Users\180453\Source\Repos\CSharpClass\CS07_05_10\obj\Debug\CS07_05_10.exe
 C:\Users\180453\Source\Repos\CSharpClass\CS07_05_10\obj\Debug\CS07_05_10.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS07_05_10\obj\Debug\CS07_05_10.csprojAssemblyReference.cache

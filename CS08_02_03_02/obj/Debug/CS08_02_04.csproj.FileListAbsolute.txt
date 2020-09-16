@@ -7,4 +7,3 @@ C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_02\obj\Debug\CS08_02_04.cspr
 C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_02\obj\Debug\CS08_02_03_02.exe
 C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_02\obj\Debug\CS08_02_03_02.pdb
 C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_02\obj\Debug\CS08_02_03_02.Form1.resources
-C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_02\obj\Debug\CS08_02_04.csprojAssemblyReference.cache

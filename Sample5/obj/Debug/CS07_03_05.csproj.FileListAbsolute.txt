@@ -21,7 +21,6 @@ G:\source\Sample5\obj\Debug\Sample5.pdb
 C:\Users\180453\Source\Repos\CSharpClass\Sample5\bin\Debug\Sample5.exe.config
 C:\Users\180453\Source\Repos\CSharpClass\Sample5\bin\Debug\Sample5.exe
 C:\Users\180453\Source\Repos\CSharpClass\Sample5\bin\Debug\Sample5.pdb
-C:\Users\180453\Source\Repos\CSharpClass\Sample5\obj\Debug\CS07_03_05.csprojAssemblyReference.cache
 C:\Users\180453\Source\Repos\CSharpClass\Sample5\obj\Debug\Sample5.Form1.resources
 C:\Users\180453\Source\Repos\CSharpClass\Sample5\obj\Debug\Sample5.Properties.Resources.resources
 C:\Users\180453\Source\Repos\CSharpClass\Sample5\obj\Debug\CS07_03_05.csproj.GenerateResource.cache
