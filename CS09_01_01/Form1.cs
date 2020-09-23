@@ -60,6 +60,7 @@ namespace CS09_01_01
             Random rn = new Random();
             pb1.num = rn.Next(4);
             pb2.num = rn.Next(4);
+            while (pb2.num == pb1.num) pb2.num = rn.Next(4);
 
             //pb.Click += new EventHandler(pb_Click);
         }

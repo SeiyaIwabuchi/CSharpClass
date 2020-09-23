@@ -149,13 +149,14 @@ namespace CS09_01_04
                         isOver = true;
                         Timer t = (Timer)sender;
                         t.Stop();
+                        this.KeyDown -= fm_KeyDown;
                     }
                     if (isIn) score++;
                     label1.Text = "SCORE:" + score.ToString();
                     label2.Text = "DROPPED:" + dropedCount.ToString();
                     blp.X = blp.X + bl.dx;
-                    blp.Y = blp.Y + bl.dy; 
-
+                    blp.Y = blp.Y + bl.dy;
+                    
                     bl.Point = blp;
                     Console.WriteLine(dropedCount);
                 }
