@@ -1,0 +1,9 @@
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_02_02\bin\Debug\CS10_02_02.exe.config
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_02_02\bin\Debug\CS10_02_02.exe
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_02_02\bin\Debug\CS10_02_02.pdb
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_02_02\obj\Debug\CS10_02_02.Form1.resources
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_02_02\obj\Debug\CS10_02_02.Properties.Resources.resources
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_02_02\obj\Debug\CS10_02_02.csproj.GenerateResource.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_02_02\obj\Debug\CS10_02_02.csproj.CoreCompileInputs.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_02_02\obj\Debug\CS10_02_02.exe
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_02_02\obj\Debug\CS10_02_02.pdb
