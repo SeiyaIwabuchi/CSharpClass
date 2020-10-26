@@ -1,0 +1,9 @@
+C:\Users\180453\Source\Repos\CSharpClass\CS08_03_06\bin\Debug\CS08_03_06.exe.config
+C:\Users\180453\Source\Repos\CSharpClass\CS08_03_06\bin\Debug\CS08_03_06.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS08_03_06\bin\Debug\CS08_03_06.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS08_03_06\obj\Debug\CS08_03_06.Form1.resources
+C:\Users\180453\Source\Repos\CSharpClass\CS08_03_06\obj\Debug\CS08_03_06.Properties.Resources.resources
+C:\Users\180453\Source\Repos\CSharpClass\CS08_03_06\obj\Debug\CS08_03_06.csproj.GenerateResource.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS08_03_06\obj\Debug\CS08_03_06.csproj.CoreCompileInputs.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS08_03_06\obj\Debug\CS08_03_06.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS08_03_06\obj\Debug\CS08_03_06.pdb

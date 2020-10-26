@@ -7,4 +7,3 @@ C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_01\obj\Debug\CS08_02_03_01.c
 C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_01\obj\Debug\CS08_02_03_01.csproj.CoreCompileInputs.cache
 C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_01\obj\Debug\CS08_02_03_01.exe
 C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_01\obj\Debug\CS08_02_03_01.pdb
-C:\Users\180453\Source\Repos\CSharpClass\CS08_02_03_01\obj\Debug\CS08_02_03_01.csprojAssemblyReference.cache

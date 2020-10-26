@@ -1,7 +1,6 @@
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_16_2\bin\Debug\CS07_07_16_2.exe.config
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_16_2\bin\Debug\CS07_07_16_2.exe
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_16_2\bin\Debug\CS07_07_16_2.pdb
-C:\Users\180453\Source\Repos\CSharpClass\CS07_07_16_2\obj\Debug\CS07_07_16_2.csprojAssemblyReference.cache
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_16_2\obj\Debug\CS07_07_16_2.Form1.resources
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_16_2\obj\Debug\CS07_07_16_2.Form2.resources
 C:\Users\180453\Source\Repos\CSharpClass\CS07_07_16_2\obj\Debug\CS07_07_16_2.Properties.Resources.resources
