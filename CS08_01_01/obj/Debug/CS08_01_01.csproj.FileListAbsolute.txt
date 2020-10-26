@@ -16,3 +16,4 @@ C:\Users\180453\Source\Repos\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.csproj.
 C:\Users\180453\Source\Repos\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.csproj.CoreCompileInputs.cache
 C:\Users\180453\Source\Repos\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.exe
 C:\Users\180453\Source\Repos\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS08_01_01\obj\Debug\CS08_01_01.csprojAssemblyReference.cache

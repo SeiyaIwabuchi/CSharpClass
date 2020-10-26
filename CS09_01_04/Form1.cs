@@ -80,8 +80,8 @@ namespace CS09_01_04
                     Point tp = new Point(random.Next(this.ClientSize.Width), random.Next(this.ClientSize.Height / 2));
                     ballList.Last().Point = tp;
                     ballList.Last().Image = bim;
-                    ballList.Last().dx = dxy * 4;
-                    ballList.Last().dy = dxy * 4;
+                    ballList.Last().dx = dxy * 4 + random.Next(5);
+                    ballList.Last().dy = dxy * 4 + random.Next(5);
                     dxy *= -1;
                     oldAddTime = stopwatch.ElapsedMilliseconds;
                 }
