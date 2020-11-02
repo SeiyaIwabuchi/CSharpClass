@@ -1,0 +1,10 @@
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_03_03\bin\Debug\CS10_03_03.exe.config
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_03_03\bin\Debug\CS10_03_03.exe
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_03_03\bin\Debug\CS10_03_03.pdb
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_03_03\obj\Debug\CS10_03_03.csprojAssemblyReference.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_03_03\obj\Debug\CS10_03_03.Form1.resources
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_03_03\obj\Debug\CS10_03_03.Properties.Resources.resources
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_03_03\obj\Debug\CS10_03_03.csproj.GenerateResource.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_03_03\obj\Debug\CS10_03_03.csproj.CoreCompileInputs.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_03_03\obj\Debug\CS10_03_03.exe
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_03_03\obj\Debug\CS10_03_03.pdb
