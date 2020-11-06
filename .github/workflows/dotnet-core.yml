@@ -14,7 +14,3 @@ jobs:
     - uses: warrenbuckley/Setup-MSBuild@v1
     - run: MSBuild.exe ./Sample5/CSharpClass.sln -p:Configuration=Release
       timeout-minutes: 5
-    - uses: actions/upload-artifact@v1.0.0
-      with:
-          name: artifacts
-          path: ./Sample5/CSharpClass.vsix
