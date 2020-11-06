@@ -1,25 +1,20 @@
-name: .NET Core
+name: build
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-2019
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
+    - uses: actions/checkout@v1
+    - uses: warrenbuckley/Setup-Nuget@v1
+    - run: nuget restore $Env:GITHUB_WORKSPACE\src\OpenUserSecrets\OpenUserSecrets.csproj
+    - uses: warrenbuckley/Setup-MSBuild@v1
+    - run: MSBuild.exe $Env:GITHUB_WORKSPACE\src\OpenUserSecrets\OpenUserSecrets.csproj -p:Configuration=Release
+      timeout-minutes: 5
+    - uses: actions/upload-artifact@v1.0.0
       with:
-        dotnet-version: 3.1.301
-    - name: Install dependencies
-      run: dotnet restore ./Sample5/CSharpClass.sln
-    - name: Build
-      run: dotnet build ./Sample5/CSharpClass.sln --configuration Release --no-restore
-    - name: Test
-      run: dotnet test ./Sample5/CSharpClass.sln --no-restore --verbosity normal
+          name: artifacts
+          path: src\OpenUserSecrets\bin\Release\OpenUserSecrets.vsix
