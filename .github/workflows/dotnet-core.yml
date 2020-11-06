@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore ./Sample5/CSharpClass.sln
     - name: Build
       run: dotnet build ./Sample5/CSharpClass.sln --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test ./Sample5/CSharpClass.sln --no-restore --verbosity normal
