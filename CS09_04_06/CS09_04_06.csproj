@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2D236B17-18A8-4DF8-8E45-7B149EC6247E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>CS10_03_03</RootNamespace>
-    <AssemblyName>CS10_03_03</AssemblyName>
+    <ProjectGuid>{7EE8A344-EE8F-4A81-9F34-54A3ABE6A159}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CS09_04_06</RootNamespace>
+    <AssemblyName>CS09_04_06</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,9 +31,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -83,7 +80,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TestClass.java" />
+    <Content Include="Sample.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

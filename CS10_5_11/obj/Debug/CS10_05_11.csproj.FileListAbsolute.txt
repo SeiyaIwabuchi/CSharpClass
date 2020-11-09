@@ -8,3 +8,13 @@ C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_5_11\obj\Debug\CS10_0
 C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_5_11\obj\Debug\CS10_05_11.csproj.CoreCompileInputs.cache
 C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_5_11\obj\Debug\CS10_5_11.exe
 C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CS10_5_11\obj\Debug\CS10_5_11.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS10_5_11\bin\Debug\CS10_5_11.exe.config
+C:\Users\180453\Source\Repos\CSharpClass\CS10_5_11\bin\Debug\CS10_5_11.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS10_5_11\bin\Debug\CS10_5_11.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS10_5_11\obj\Debug\CS10_05_11.csprojAssemblyReference.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS10_5_11\obj\Debug\CS10_5_11.Form1.resources
+C:\Users\180453\Source\Repos\CSharpClass\CS10_5_11\obj\Debug\CS10_5_11.Properties.Resources.resources
+C:\Users\180453\Source\Repos\CSharpClass\CS10_5_11\obj\Debug\CS10_05_11.csproj.GenerateResource.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS10_5_11\obj\Debug\CS10_05_11.csproj.CoreCompileInputs.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS10_5_11\obj\Debug\CS10_5_11.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS10_5_11\obj\Debug\CS10_5_11.pdb
