@@ -52,8 +52,10 @@ namespace CS10_03_03
 
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    using (BinaryWriter bw = new BinaryWriter(new FileStream(sfd.FileName, FileMode.OpenOrCreate, FileAccess.Write)))
+                    new FileStream(sfd.FileName, FileMode.OpenOrCreate, FileAccess.Write).Close();
+                    using (BinaryWriter bw = new BinaryWriter(new FileStream(sfd.FileName, FileMode.Truncate, FileAccess.Write)))
                     {
+                        bw.Seek(0, SeekOrigin.Begin);
                         for(int i = 0; i < textBox1.Text.Length / 2; i++)
                         {
                             string str = textBox1.Text.Substring(i * 2, 2);
