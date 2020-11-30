@@ -35,7 +35,7 @@ namespace CS10_03_03
                         while (size > 0)
                         {
                             byte bt = br.ReadByte();
-                            tb1Text += bt.ToString("x");
+                            tb1Text += String.Format(bt.ToString("x").Length == 1?"0"+bt.ToString("x"): bt.ToString("x"));
                             if ((bt >= 0x41 && bt <= 0x5a) || (bt >= 0x61 && bt <= 0x7a)) tb2Text += Convert.ToChar(bt).ToString();
                             else tb2Text += " ";
                             size -= 1;

@@ -24,5 +24,11 @@ namespace CS09_04_06
             ds.ReadXml(@"..\..\Sample.xml");
             dg.DataSource = ds.Tables[0];
         }
+
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            
+            this.Width = dataGridView1.Width + dataGridView1.RowHeadersWidth;
+        }
     }
 }
