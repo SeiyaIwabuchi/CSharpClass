@@ -1,0 +1,10 @@
+C:\Users\180453\Source\Repos\CSharpClass\CS11.1.2\bin\Debug\CS11.1.2.exe.config
+C:\Users\180453\Source\Repos\CSharpClass\CS11.1.2\bin\Debug\CS11.1.2.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS11.1.2\bin\Debug\CS11.1.2.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS11.1.2\obj\Debug\CS11._1._2.Form1.resources
+C:\Users\180453\Source\Repos\CSharpClass\CS11.1.2\obj\Debug\CS11._1._2.Properties.Resources.resources
+C:\Users\180453\Source\Repos\CSharpClass\CS11.1.2\obj\Debug\CS11_1_2.csproj.GenerateResource.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS11.1.2\obj\Debug\CS11_1_2.csproj.CoreCompileInputs.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS11.1.2\obj\Debug\CS11.1.2.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS11.1.2\obj\Debug\CS11.1.2.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS11.1.2\obj\Debug\CS11_1_2.csprojAssemblyReference.cache
