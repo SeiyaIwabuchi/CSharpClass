@@ -1,0 +1,10 @@
+C:\Users\180453\Source\Repos\CSharpClass\CS11_4_4\bin\Debug\CS11_4_4.exe.config
+C:\Users\180453\Source\Repos\CSharpClass\CS11_4_4\bin\Debug\CS11_4_4.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS11_4_4\bin\Debug\CS11_4_4.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS11_4_4\obj\Debug\CS11_4_4C.csprojAssemblyReference.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS11_4_4\obj\Debug\CS11_4_4.Properties.Resources.resources
+C:\Users\180453\Source\Repos\CSharpClass\CS11_4_4\obj\Debug\CS11_4_4C.csproj.GenerateResource.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS11_4_4\obj\Debug\CS11_4_4C.csproj.CoreCompileInputs.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS11_4_4\obj\Debug\CS11_4_4.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS11_4_4\obj\Debug\CS11_4_4.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS11_4_4\obj\Debug\CS11_4_4.form1.resources

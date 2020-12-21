@@ -62,7 +62,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.05186F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.05186F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.83865F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(284, 161);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(284, 204);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label1
@@ -77,7 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 25);
+            this.label2.Location = new System.Drawing.Point(3, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 12);
             this.label2.TabIndex = 1;
@@ -86,7 +86,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 50);
+            this.label3.Location = new System.Drawing.Point(3, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 2;
@@ -95,7 +95,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 75);
+            this.label4.Location = new System.Drawing.Point(3, 96);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 12);
             this.label4.TabIndex = 3;
@@ -111,7 +111,7 @@
             // hostLabel
             // 
             this.hostLabel.AutoSize = true;
-            this.hostLabel.Location = new System.Drawing.Point(145, 25);
+            this.hostLabel.Location = new System.Drawing.Point(145, 32);
             this.hostLabel.Name = "hostLabel";
             this.hostLabel.Size = new System.Drawing.Size(0, 12);
             this.hostLabel.TabIndex = 5;
@@ -119,7 +119,7 @@
             // IPLabel
             // 
             this.IPLabel.AutoSize = true;
-            this.IPLabel.Location = new System.Drawing.Point(145, 50);
+            this.IPLabel.Location = new System.Drawing.Point(145, 64);
             this.IPLabel.Name = "IPLabel";
             this.IPLabel.Size = new System.Drawing.Size(0, 12);
             this.IPLabel.TabIndex = 6;
@@ -127,7 +127,7 @@
             // classLabel
             // 
             this.classLabel.AutoSize = true;
-            this.classLabel.Location = new System.Drawing.Point(145, 75);
+            this.classLabel.Location = new System.Drawing.Point(145, 96);
             this.classLabel.Name = "classLabel";
             this.classLabel.Size = new System.Drawing.Size(0, 12);
             this.classLabel.TabIndex = 7;
@@ -135,7 +135,7 @@
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.Location = new System.Drawing.Point(0, 138);
+            this.button1.Location = new System.Drawing.Point(0, 181);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(284, 23);
             this.button1.TabIndex = 1;
@@ -147,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 161);
+            this.ClientSize = new System.Drawing.Size(284, 204);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";

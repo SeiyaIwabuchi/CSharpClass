@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
@@ -48,6 +49,9 @@ namespace CS11._1._2
             catch (Exception ex)
             {
                 Console.WriteLine(ex);
+                hostLabel.Text = "";
+                IPLabel.Text = "";
+                classLabel.Text = "";
                 MessageBox.Show("エラーが発生しました。\n" + ex.Message);
             }
             

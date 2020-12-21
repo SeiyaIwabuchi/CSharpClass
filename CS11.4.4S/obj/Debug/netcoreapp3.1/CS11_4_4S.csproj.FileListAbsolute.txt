@@ -1,0 +1,12 @@
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\bin\Debug\netcoreapp3.1\CS11_4_4S.exe
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\bin\Debug\netcoreapp3.1\CS11_4_4S.deps.json
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\bin\Debug\netcoreapp3.1\CS11_4_4S.runtimeconfig.json
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\bin\Debug\netcoreapp3.1\CS11_4_4S.runtimeconfig.dev.json
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\bin\Debug\netcoreapp3.1\CS11_4_4S.dll
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\bin\Debug\netcoreapp3.1\CS11_4_4S.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\obj\Debug\netcoreapp3.1\CS11_4_4S.csproj.CoreCompileInputs.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\obj\Debug\netcoreapp3.1\CS11_4_4S.AssemblyInfoInputs.cache
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\obj\Debug\netcoreapp3.1\CS11_4_4S.AssemblyInfo.cs
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\obj\Debug\netcoreapp3.1\CS11_4_4S.dll
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\obj\Debug\netcoreapp3.1\CS11_4_4S.pdb
+C:\Users\180453\Source\Repos\CSharpClass\CS11.4.4S\obj\Debug\netcoreapp3.1\CS11_4_4S.genruntimeconfig.cache
