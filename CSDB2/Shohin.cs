@@ -53,11 +53,11 @@ namespace CSDB2
             }
             return results;
         }
-        public static void insert(string pro_code, string pro_name, int pro_price)
+        public static void insert(Shohin newitem)
         {
             string strAccessInsert = string.Format(
                 "insert into shohin values({0},{1},{2})",
-                pro_code,pro_name,pro_price
+                newitem.pro_code, newitem.pro_name, newitem.pro_price
                 );
             excutedSql = strAccessInsert;
             myAccessConn.Open();

@@ -8,3 +8,13 @@ C:\Users\180453\source\repos\CSharpClass\CSDB2\obj\Debug\CSDB2.csproj.GenerateRe
 C:\Users\180453\source\repos\CSharpClass\CSDB2\obj\Debug\CSDB2.csproj.CoreCompileInputs.cache
 C:\Users\180453\source\repos\CSharpClass\CSDB2\obj\Debug\CSDB2.exe
 C:\Users\180453\source\repos\CSharpClass\CSDB2\obj\Debug\CSDB2.pdb
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CSDB2\obj\Debug\CSDB2.csprojAssemblyReference.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CSDB2\obj\Debug\CSDB2.Form1.resources
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CSDB2\obj\Debug\CSDB2.Properties.Resources.resources
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CSDB2\obj\Debug\CSDB2.csproj.GenerateResource.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CSDB2\obj\Debug\CSDB2.csproj.CoreCompileInputs.cache
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CSDB2\obj\Debug\CSDB2.exe
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CSDB2\obj\Debug\CSDB2.pdb
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CSDB2\bin\Debug\CSDB2.exe.config
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CSDB2\bin\Debug\CSDB2.exe
+C:\Users\seiya\Source\Repos\SeiyaIwabuchi\CSharpClass\CSDB2\bin\Debug\CSDB2.pdb

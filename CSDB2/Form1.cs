@@ -55,17 +55,29 @@ namespace CSDB2
                 textBoxSQL.Text = Shohin.excutedSql;
             }
         }
-
+        //追加ボンタン
         private void button2_Click(object sender, EventArgs e)
         {
+            // 追加処理
+            try
+            {
+                Shohin newItem = new Shohin(inputProCode.Text, inputProName.Text, int.Parse(inputProPrice.Text));
+                Shohin.insert(newItem);
+            }catch(Exception ex)
+            {
 
+            }
+            finally
+            {
+
+            }
         }
-
+        // 更新ボタン
         private void button3_Click(object sender, EventArgs e)
         {
 
         }
-
+        // 削除ボタン
         private void button4_Click(object sender, EventArgs e)
         {
 
