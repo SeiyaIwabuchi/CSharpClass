@@ -14,7 +14,8 @@ namespace CSDB2
     {
         public Form1()
         {
-            new Shohin(); // コンストラクタの呼び出し
+            new Shohin(); // コンストラクタの呼び出しで初期化
+            new Note();
             InitializeComponent();
             try
             {
