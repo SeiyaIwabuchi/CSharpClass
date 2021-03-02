@@ -9,21 +9,19 @@
   },
   "packageFolders": {
     "C:\\Users\\180453\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\180453\\Source\\Repos\\CSharpClass\\CS12_1_1\\CS12_1_1.csproj",
+      "projectUniqueName": "C:\\Users\\180453\\source\\repos\\CSharpClass\\CS12_1_1\\CS12_1_1.csproj",
       "projectName": "CS12_1_1",
-      "projectPath": "C:\\Users\\180453\\Source\\Repos\\CSharpClass\\CS12_1_1\\CS12_1_1.csproj",
+      "projectPath": "C:\\Users\\180453\\source\\repos\\CSharpClass\\CS12_1_1\\CS12_1_1.csproj",
       "packagesPath": "C:\\Users\\180453\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\180453\\Source\\Repos\\CSharpClass\\CS12_1_1\\obj\\",
+      "outputPath": "C:\\Users\\180453\\source\\repos\\CSharpClass\\CS12_1_1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\180453\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

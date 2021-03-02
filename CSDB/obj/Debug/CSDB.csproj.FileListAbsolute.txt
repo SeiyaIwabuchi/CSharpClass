@@ -1,10 +1,10 @@
 C:\Users\180453\Source\Repos\CSharpClass\CSDB\bin\Debug\CSDB.exe.config
 C:\Users\180453\Source\Repos\CSharpClass\CSDB\bin\Debug\CSDB.exe
 C:\Users\180453\Source\Repos\CSharpClass\CSDB\bin\Debug\CSDB.pdb
-C:\Users\180453\Source\Repos\CSharpClass\CSDB\obj\Debug\CSDB.csprojAssemblyReference.cache
-C:\Users\180453\Source\Repos\CSharpClass\CSDB\obj\Debug\CSDB.Form1.resources
 C:\Users\180453\Source\Repos\CSharpClass\CSDB\obj\Debug\CSDB.Properties.Resources.resources
 C:\Users\180453\Source\Repos\CSharpClass\CSDB\obj\Debug\CSDB.csproj.GenerateResource.cache
 C:\Users\180453\Source\Repos\CSharpClass\CSDB\obj\Debug\CSDB.csproj.CoreCompileInputs.cache
 C:\Users\180453\Source\Repos\CSharpClass\CSDB\obj\Debug\CSDB.exe
 C:\Users\180453\Source\Repos\CSharpClass\CSDB\obj\Debug\CSDB.pdb
+C:\Users\180453\source\repos\CSharpClass\CSDB\obj\Debug\CSDB.csprojAssemblyReference.cache
+C:\Users\180453\source\repos\CSharpClass\CSDB\obj\Debug\CSDB.Form1.resources

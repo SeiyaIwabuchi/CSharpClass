@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\180453\\Source\\Repos\\CSharpClass\\CS11.4.4S\\CS11_4_4S.csproj": {}
+    "C:\\Users\\180453\\source\\repos\\CSharpClass\\CS11.4.4S\\CS11_4_4S.csproj": {}
   },
   "projects": {
-    "C:\\Users\\180453\\Source\\Repos\\CSharpClass\\CS11.4.4S\\CS11_4_4S.csproj": {
+    "C:\\Users\\180453\\source\\repos\\CSharpClass\\CS11.4.4S\\CS11_4_4S.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\180453\\Source\\Repos\\CSharpClass\\CS11.4.4S\\CS11_4_4S.csproj",
+        "projectUniqueName": "C:\\Users\\180453\\source\\repos\\CSharpClass\\CS11.4.4S\\CS11_4_4S.csproj",
         "projectName": "CS11_4_4S",
-        "projectPath": "C:\\Users\\180453\\Source\\Repos\\CSharpClass\\CS11.4.4S\\CS11_4_4S.csproj",
+        "projectPath": "C:\\Users\\180453\\source\\repos\\CSharpClass\\CS11.4.4S\\CS11_4_4S.csproj",
         "packagesPath": "C:\\Users\\180453\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\180453\\Source\\Repos\\CSharpClass\\CS11.4.4S\\obj\\",
+        "outputPath": "C:\\Users\\180453\\source\\repos\\CSharpClass\\CS11.4.4S\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\180453\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -57,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
