@@ -40,6 +40,9 @@
             this.textBoxSQL = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // resultLists
@@ -119,6 +122,7 @@
             this.textboxError.Multiline = true;
             this.textboxError.Name = "textboxError";
             this.textboxError.ReadOnly = true;
+            this.textboxError.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textboxError.Size = new System.Drawing.Size(312, 60);
             this.textboxError.TabIndex = 8;
             // 
@@ -128,6 +132,7 @@
             this.textBoxSQL.Multiline = true;
             this.textBoxSQL.Name = "textBoxSQL";
             this.textBoxSQL.ReadOnly = true;
+            this.textBoxSQL.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBoxSQL.Size = new System.Drawing.Size(312, 60);
             this.textBoxSQL.TabIndex = 9;
             // 
@@ -149,11 +154,41 @@
             this.label2.TabIndex = 11;
             this.label2.Text = "SQL";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 186);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(49, 12);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "pro_code";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(116, 186);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(52, 12);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "pro_name";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(222, 186);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 12);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "pro_price";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxSQL);
@@ -187,6 +222,9 @@
         private System.Windows.Forms.TextBox textBoxSQL;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 

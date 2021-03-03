@@ -9,27 +9,48 @@ namespace CSDB2
     class Shohin : Model
     {
         //strAccessInsert = "INSERT INTO shohin(pro_code,pro_name,pro_price)"+ " VALUES('" + textBox1.Text + "','"+ textBox2.Text + "',"+ textBox3.Text +  ")";
-        string pro_code;
-        string pro_name;
-        int pro_price;
+        ModelString pro_code = new ModelString();
+        ModelString pro_name = new ModelString();
+        ModelInt pro_price = new ModelInt();
         public static string excutedSql = "";
 
-        public Shohin() { }
-        public Shohin(string pro_code, string pro_name, int pro_price)
+        internal ModelString Pro_code { get => pro_code; set => pro_code = value; }
+        internal ModelString Pro_name { get => pro_name; set => pro_name = value; }
+        internal ModelInt Pro_price { get => pro_price; set => pro_price = value; }
+
+        public Shohin()
         {
-            this.pro_code = pro_code;
-            this.pro_name = pro_name;
-            this.pro_price = pro_price;
+            this.tableName = GetType().Name;
+            this.pro_code.ColName = nameof(this.pro_code);
+            this.pro_name.ColName = nameof(this.pro_name);
+            this.pro_price.ColName = nameof(this.pro_price);
         }
 
-        public string Pro_code { get => pro_code; set => pro_code = value; }
-        public string Pro_name { get => pro_name; set => pro_name = value; }
-        public int Pro_price { get => pro_price; set => pro_price = value; }
+        public Shohin(string pro_code="", string pro_name="", int pro_price=0)
+        {
+            this.tableName = GetType().Name;
+            this.pro_code.ColName = nameof(this.pro_code);
+            this.pro_name.ColName = nameof(this.pro_name);
+            this.pro_price.ColName = nameof(this.pro_price);
+            this.pro_code += pro_code;
+            this.pro_name += pro_name;
+            this.pro_price += pro_price;
+        }
+
+
 
         public static List<Shohin> getAll()
         {
-            string strAccessSelect = "SELECT * FROM shohin";
-            //excutedSql = strAccessSelect;
+            Shohin dummy = new Shohin();
+            string strAccessSelect = 
+                SqlBuilder.select(
+                    new ModelColumn[]{
+                        dummy.pro_code,
+                        dummy.pro_name,
+                        dummy.pro_price
+                    },
+                    typeof(Shohin));
+            excutedSql += strAccessSelect + "\r\n";
             List<Shohin> results = new List<Shohin>();
             OleDbCommand comm = getQueryExecute(strAccessSelect);
             myAccessConn.Open();
@@ -53,13 +74,17 @@ namespace CSDB2
             }
             return results;
         }
-        public static void insert(Shohin newitem)
+        public void insert()
         {
-            string strAccessInsert = string.Format(
-                "insert into shohin values('{0}','{1}',{2})",
-                newitem.pro_code, newitem.pro_name, newitem.pro_price
+            string strAccessInsert = SqlBuilder.insert(
+                new [] { 
+                    string.Format("'{0}'",pro_code.ToString()),
+                    string.Format("'{0}'",pro_name.ToString()),
+                    pro_price.ToString() 
+                },
+                typeof(Shohin)
                 );
-            excutedSql = strAccessInsert;
+            excutedSql += strAccessInsert + "\r\n";
             myAccessConn.Open();
             OleDbCommand cmd = new OleDbCommand(strAccessInsert, myAccessConn);
             cmd.ExecuteNonQuery();
@@ -70,13 +95,20 @@ namespace CSDB2
         }
 
 
-        public void update(Shohin newShohin)
+        public void update(Shohin newItem)
         {
-            string strAccessInsert = string.Format(
-                "update shohin set pro_code='{0}',pro_name='{1}',pro_price={2} where pro_code='{3}'",
-                newShohin.pro_code, newShohin.pro_name, newShohin.pro_price, this.pro_code
-                );
-            excutedSql = strAccessInsert;
+            string strAccessInsert = 
+                SqlBuilder.update(
+                    new[]
+                    {
+                        string.Format("{0}='{1}'",newItem.pro_code.ColName,newItem.pro_code.ToString()),
+                        string.Format("{0}='{1}'",newItem.pro_name.ColName,newItem.pro_name.ToString()),
+                        string.Format("{0}={1}",newItem.pro_price.ColName,newItem.pro_price.ToString()),
+                    },
+                    typeof(Shohin),
+                    pro_code == pro_code.value
+                    );
+            excutedSql += strAccessInsert + "\r\n";
             myAccessConn.Open();
             OleDbCommand cmd = new OleDbCommand(strAccessInsert, myAccessConn);
             cmd.ExecuteNonQuery();
@@ -88,11 +120,8 @@ namespace CSDB2
 
         public void delete()
         {
-            string strAccessInsert = string.Format(
-                "delete from shohin where pro_code='{0}'",
-                this.pro_code
-                );
-            excutedSql = strAccessInsert;
+            string strAccessInsert = SqlBuilder.delete(typeof(Shohin), this.pro_code == this.pro_code.value);
+            excutedSql += strAccessInsert + "\r\n";
             myAccessConn.Open();
             OleDbCommand cmd = new OleDbCommand(strAccessInsert, myAccessConn);
             cmd.ExecuteNonQuery();
@@ -104,11 +133,18 @@ namespace CSDB2
 
         public static List<Shohin> extractByCondition(string pro_code, string pro_name = "", int pro_price = 0)
         {
-            string strAccessSelect = string.Format(
-                "SELECT * FROM shohin where pro_code='{0}' or pro_name='{1}' or pro_price={2}",
-                pro_code, pro_name, pro_price
-                );
-            excutedSql = strAccessSelect;
+            Shohin dummy = new Shohin();
+            string strAccessSelect =
+                SqlBuilder.select(
+                    new ModelColumn[]{
+                        dummy.pro_code,
+                        dummy.pro_name,
+                        dummy.pro_price
+                    },
+                    typeof(Shohin),
+                    dummy.pro_code == pro_code | dummy.pro_name == pro_name | dummy.pro_price == pro_price
+                    );
+            excutedSql += strAccessSelect + "\r\n";
             List<Shohin> results = new List<Shohin>();
             OleDbCommand comm = getQueryExecute(strAccessSelect);
             myAccessConn.Open();

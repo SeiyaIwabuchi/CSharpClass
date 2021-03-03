@@ -5,6 +5,7 @@ namespace CSDB2
 {
     class Model : Database
     {
+        public string tableName;
         public static OleDbCommand getQueryExecute(string strAccessSelect)
         {
             try
