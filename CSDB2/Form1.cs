@@ -17,17 +17,24 @@ namespace CSDB2
             new Shohin(); // コンストラクタの呼び出しで初期化
             new Note();
             InitializeComponent();
+            refreshListBox();
+        }
+
+        private void refreshListBox()
+        {
             try
             {
+                resultLists.Items.Clear();
                 resultLists.Items.AddRange(Shohin.getAll().ToArray());
                 textBoxSQL.Text = Shohin.excutedSql;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 textboxError.Text = ex.Message;
             }
-            finally {
-                textBoxSQL.Text = Shohin.excutedSql;
+            finally
+            {
+                textBoxSQL.Text = "select * from shohin";
             }
         }
 
@@ -52,7 +59,6 @@ namespace CSDB2
             }
             finally
             {
-                Console.WriteLine(Shohin.excutedSql);
                 textBoxSQL.Text = Shohin.excutedSql;
             }
         }
@@ -66,22 +72,57 @@ namespace CSDB2
                 Shohin.insert(newItem);
             }catch(Exception ex)
             {
-
+                textboxError.Text = ex.Message;
             }
             finally
             {
-
+                textBoxSQL.Text = Shohin.excutedSql;
             }
+
+            refreshListBox();
+
         }
         // 更新ボタン
         private void button3_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                ((Shohin)resultLists.SelectedItem).update(new Shohin(inputProCode.Text, inputProName.Text, int.Parse(inputProPrice.Text)));
+                refreshListBox();
+            }
+            catch (Exception ex)
+            {
+                textboxError.Text = ex.Message;
+            }
+            finally
+            {
+                textBoxSQL.Text = Shohin.excutedSql;
+            }
         }
         // 削除ボタン
         private void button4_Click(object sender, EventArgs e)
         {
+            try
+            {
+                ((Shohin)resultLists.SelectedItem).delete();
+                refreshListBox();
+            }
+            catch (Exception ex)
+            {
+                textboxError.Text = ex.Message;
+            }
+            finally
+            {
+                textBoxSQL.Text = Shohin.excutedSql;
+            }
 
+        }
+
+        private void resultLists_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            inputProCode.Text = ((Shohin)resultLists.SelectedItem).Pro_code;
+            inputProName.Text = ((Shohin)resultLists.SelectedItem).Pro_name;
+            inputProPrice.Text = ((Shohin)resultLists.SelectedItem).Pro_price.ToString();
         }
     }
 }

@@ -50,6 +50,7 @@
             this.resultLists.Name = "resultLists";
             this.resultLists.Size = new System.Drawing.Size(312, 160);
             this.resultLists.TabIndex = 0;
+            this.resultLists.SelectedIndexChanged += new System.EventHandler(this.resultLists_SelectedIndexChanged);
             // 
             // inputProCode
             // 

@@ -29,7 +29,7 @@ namespace CSDB2
         public static List<Shohin> getAll()
         {
             string strAccessSelect = "SELECT * FROM shohin";
-            excutedSql = strAccessSelect;
+            //excutedSql = strAccessSelect;
             List<Shohin> results = new List<Shohin>();
             OleDbCommand comm = getQueryExecute(strAccessSelect);
             myAccessConn.Open();
@@ -56,7 +56,7 @@ namespace CSDB2
         public static void insert(Shohin newitem)
         {
             string strAccessInsert = string.Format(
-                "insert into shohin values({0},{1},{2})",
+                "insert into shohin values('{0}','{1}',{2})",
                 newitem.pro_code, newitem.pro_name, newitem.pro_price
                 );
             excutedSql = strAccessInsert;
@@ -70,11 +70,11 @@ namespace CSDB2
         }
 
 
-        public void update(string pro_code, string pro_name, int pro_price)
+        public void update(Shohin newShohin)
         {
             string strAccessInsert = string.Format(
-                "update shohin set pro_code={0} pro_name={1} pro_price={2} where pro_code={0}",
-                pro_code, pro_name, pro_price, this.pro_code
+                "update shohin set pro_code='{0}',pro_name='{1}',pro_price={2} where pro_code='{3}'",
+                newShohin.pro_code, newShohin.pro_name, newShohin.pro_price, this.pro_code
                 );
             excutedSql = strAccessInsert;
             myAccessConn.Open();
@@ -89,7 +89,7 @@ namespace CSDB2
         public void delete()
         {
             string strAccessInsert = string.Format(
-                "delete from shohin where pro_code={0}",
+                "delete from shohin where pro_code='{0}'",
                 this.pro_code
                 );
             excutedSql = strAccessInsert;
